@@ -402,7 +402,7 @@ void setup(){
   pixel.show();
 
   // Configure SPI bus of the hardware
-  // Order: SCLK, MISO, MOSI, SS (el SS global do not matter here)
+  // Order: SCLK, MISO, MOSI, SS (el SS global does not matter here)
   SPI.begin(SPI_SCK, SPI_MISO, SPI_MOSI);
 
   digitalWrite(TFT_CS, HIGH); // force screen to ignore the bus 

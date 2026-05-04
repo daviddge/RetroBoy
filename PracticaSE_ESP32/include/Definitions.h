@@ -11,7 +11,6 @@ enum ConsoleState {
   STATE_MENU,
   STATE_CALENDAR,
   STATE_SETTINGS,
-  STATE_WAITING_CART,
   STATE_LOADING_GAME,
   STATE_GAME_RUNNING
 };
@@ -61,7 +60,7 @@ struct GlobalConfig {
   bool isDarkMode = true;
   bool soundEnable = true;
 
-  // Función para obtener los colores según el modo
+  // Function to obtain colors given mode
   Theme getTheme() {
     if (isDarkMode) {
       return {ST77XX_BLACK, ST77XX_WHITE, ST77XX_CYAN};
